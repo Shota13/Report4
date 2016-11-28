@@ -1,11 +1,11 @@
-package main.jp.ac.uryukyu.ie.e165757;
+package jp.ac.uryukyu.ie.e165757;
 
 /**
- * Created by e165757 on 2016/11/19.
+ * Created by e165757 on 2016/11/28.
  */
 public class Main {
     public static void main(String[] args){
-        Hero hero = new Hero("勇者", 10, 5);
+        Hero hero = new Hero("ヨシヒコ", 10, 5);
         Enemy enemy = new Enemy("スライム", 6, 3);
 
         System.out.printf("%s vs. %s\n", hero.getName(), enemy.getName());
@@ -19,5 +19,4 @@ public class Main {
         }
         System.out.println("戦闘終了");
     }
-    //jiajsoigoahgpihapghpahrgpha
 }
