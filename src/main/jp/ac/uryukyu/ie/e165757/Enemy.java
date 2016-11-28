@@ -1,9 +1,10 @@
-package main.jp.ac.uryukyu.ie.e165757;
+package jp.ac.uryukyu.ie.e165757;
 
 /**
- * Created by e165757 on 2016/11/19.
+ * Created by e165757 on 2016/11/28.
  */
-public class Enemy {  String name;
+public class Enemy {
+    String name;
     int hitPoint;
     int attack;
     boolean dead;
@@ -40,7 +41,7 @@ public class Enemy {  String name;
      * @param hero 攻撃対象
      */
     public void attack(Hero hero){
-        if(dead = false) {
+        if(dead =false) {
             int damage = (int) (Math.random() * attack);
             System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.getName(), damage);
             hero.wounded(damage);
@@ -59,4 +60,5 @@ public class Enemy {  String name;
             System.out.printf("モンスター%sは倒れた。\n", name);
         }
     }
+
 }
